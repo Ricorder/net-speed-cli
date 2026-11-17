@@ -1,0 +1,22 @@
+{
+  "name": "net-speed-cli",
+  "version": "1.0.0",
+  "description": "10 sequential downloads of one URL, honest throughput: mean, median and percentiles in Mbit/s and MB/s",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.17.0"
+  },
+  "bin": {
+    "net-speed": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "typescript": "^5.9.3"
+  }
+}
